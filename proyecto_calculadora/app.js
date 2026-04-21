@@ -1,6 +1,6 @@
 import { suma } from './funciones/suma.js';
 import { promedio } from './funciones/promedio.js';
-import { potencia } from './funciones/potencia.js';
+import { potencia } from './funciones/potencia.js'; //Se declara  la función Potencia en el App
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -25,8 +25,8 @@ function calcular() {
     resultado = suma(v1, v2);
   } else if (op === "promedio") {
     resultado = promedio(v1, v2);
-  } else if (op === "potencia") {
-    resultado = potencia(v1, v2);
+  } else if (op === "potencia") { 
+    resultado = potencia(v1, v2); //Se muestra el resultado de la función Potencia
   }
 
   document.getElementById("resultado").innerText = "Resultado: " + resultado;
